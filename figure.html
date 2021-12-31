@@ -15,55 +15,65 @@
         </div>
     </header>
     <main>
-        <section>
-            <div class="main-container--title">
-                <h2>Figuras Geométricas</h2>
-                <p>Obtendremos el perímetro, área de las diferentes figuras geométricas</p>
-            </div>
-            <section class="main--form-container">
-                <form action="">
-                    <p>Cuadrado</p>
-                    <label for="side">
-                        <span>Lado cuadrado</span>
-                        <input type="number" id="side" name="side" placeholder="lado cuadrado" required>
-                    </label>
-                    <button type="button"id="perimeter">Calcular perímetro</button>
-                    <button type="button"id="area">Calcular área</button>
+        <div class="main-container--title">
+            <h2>Cuadrado, Triángulo y Círculo</h2>
+            <p>Ingresa los datos que se requieren para obtener los resultados</p>
+        </div>
+        <section class="main-sections">
+            <section class="main-section-figure">
+                <div class="container-figure">
+                    <img src="./assets/icons/square.jpg" alt="icon-square">
+                    <form action="">
+                        <label for="side">
+                            <span>Lado</span>
+                            <input type="number" id="side" name="side" placeholder="lado" required>
+                        </label>
+                        <button type="button"id="perimeter">Calcular perímetro</button>
+                        <button type="button"id="area">Calcular área</button>
+                    </form>
                     <p id="result"></p>
-                </form>
-                <form action="">
-                    <p>Triángulo</p>
-                    <label for="triangleSide1">
-                        <span>Lado1 triángulo</span>
-                        <input type="number" id="triangleSide1" name="triangleSide1" placeholder="lado1 triángulo" required>
-                    </label>
-                    <label for="triangleSide2">
-                        <span>Lado2 triángulo</span>
-                        <input type="number" id="triangleSide2" name="triangleSide2" placeholder="lado2 triángulo" required>
-                    </label>
-                    <label for="triangleBase">
-                        <span>Base triángulo</span>
-                        <input type="number" id="triangleBase" name="triangleBase" placeholder="base de triángulo" required>
-                    </label>
-                    <label for="triangleHeight">
-                        <span>altura triángulo</span>
-                        <input type="number" id="triangleHeight" name="triangleHeight" placeholder="altura de triángulo" required>
-                    </label>
-                    <button type="button"id="trianglePerimeter">Calcular perímetro</button>
-                    <button type="button"id="triangleArea">Calcular área</button>
-                    <p id="triangleResult"></p>
-                </form>
-                <form action="">
-                    <p>Círculo</p>
-                    <label for="radio">
-                        <span>radio de círculo</span>
-                        <input type="number" id="radio" name="radio" placeholder="radio de círculo" required>
-                    </label>
-                    <button type="button"id="circleDiameter">Calcular el diámetro</button>
-                    <button type="button"id="circleCircunference">Calcular la circunferencia</button>
-                    <button type="button"id="circleArea">Calcular área</button>
-                    <p id="circleResult"></p>
-                </form>
+                </div>
+            </section>
+            <section class="main-section-figure">
+                <div class="container-figure">
+                    <img src="./assets/icons/triangle.jpg" alt="">
+                    <form action="">
+                        <label for="triangleSide1">
+                            <span>Lado 1</span>
+                            <input type="number" id="triangleSide1" name="triangleSide1" placeholder="lado 1" required>
+                        </label>
+                        <label for="triangleSide2">
+                            <span>Lado 2</span>
+                            <input type="number" id="triangleSide2" name="triangleSide2" placeholder="lado 2" required>
+                        </label>
+                        <label for="triangleBase">
+                            <span>Base</span>
+                            <input type="number" id="triangleBase" name="triangleBase" placeholder="base" required>
+                        </label>
+                        <label for="triangleHeight">
+                            <span>Altura</span>
+                            <input type="number" id="triangleHeight" name="triangleHeight" placeholder="altura" required>
+                        </label>
+                        <button type="button"id="trianglePerimeter">Calcular perímetro</button>
+                        <button type="button"id="triangleArea">Calcular área</button>
+                        <p id="triangleResult"></p>
+                    </form>
+                </div>
+            </section>
+            <section class="main-section-figure">  
+                <div class="container-figure">
+                    <img src="./assets/icons/circle.jpg" alt="">
+                    <form action="">
+                        <label for="radio">
+                            <span>Radio</span>
+                            <input type="number" id="radio" name="radio" placeholder="radio" required>
+                        </label>
+                        <button type="button"id="circleDiameter">Calcular el diámetro</button>
+                        <button type="button"id="circleCircunference">Calcular la circunferencia</button>
+                        <button type="button"id="circleArea">Calcular área</button>
+                        <p id="circleResult"></p>
+                    </form>
+                </div>             
             </section>
         </section>
     </main>
