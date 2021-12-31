@@ -23,7 +23,7 @@ buttonArea.addEventListener('click', resultArea = () => {
 const triangleSide1 = document.getElementById('triangleSide1');
 const triangleSide2 = document.getElementById('triangleSide2');
 const triangleBase = document.getElementById('triangleBase');
-const triangleHeight = document.getElementById('triangleHeight')
+const triangleHeight = document.getElementById('triangleHeight');
 
 const buttontrianglePerimeter = document.getElementById('trianglePerimeter');
 
@@ -39,5 +39,34 @@ buttontrianglePerimeter.addEventListener('click', trianglePerimeter = () => {
 buttontriangleArea.addEventListener('click', triangleArea = () => {
     const calculatingArea = parseInt(triangleBase.value)*parseInt(triangleHeight.value)/2;
     triangleResult.innerHTML = "El área del triángulo es: " + calculatingArea;
+})
+
+// Círculo
+
+const radio = document.getElementById('radio');
+
+const PI = Math.PI;
+
+const buttonCircleDiameter = document.getElementById('circleDiameter');
+
+const buttonCircleCircunference = document.getElementById('circleCircunference');
+
+const buttonCircleArea = document.getElementById('circleArea');
+
+const circleResult = document.getElementById('circleResult');
+
+buttonCircleDiameter.addEventListener('click', circleDiameter = () => {
+    const calculatingDiamter = parseInt(radio.value)*2;
+    circleResult.innerHTML = "El diámetro del círculo es: " + calculatingDiamter;
+})
+
+buttonCircleCircunference.addEventListener('click', circleCircunference = () => {
+    const calculatingCircunference = parseInt(radio.value)*2*PI;
+    circleResult.innerHTML = "La circunferencia del círculo es: " + calculatingCircunference;
+})
+
+buttonCircleArea.addEventListener('click', circleArea = () => {
+    const calculatingArea = parseInt(radio.value*radio.value)*PI;
+    circleResult.innerHTML = "El área del círculo es: " + calculatingArea;
 })
 
