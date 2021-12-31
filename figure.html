@@ -17,10 +17,19 @@
     <main>
         <section>
             <div class="main-container--title">
-                <h2>Cuadrado</h2>
-                <p>Obtendremos el perímetro, área del cuadrado</p>
+                <h2>Figuras Geométricas</h2>
+                <p>Obtendremos el perímetro, área de las diferentes figuras geométricas</p>
             </div>
             <section class="main--form-container">
+                <form action="">
+                    <label for="side">
+                        <span>Lado cuadrado</span>
+                        <input type="number" id="side" name="side" placeholder="lado cuadrado" required>
+                    </label>
+                    <button type="button"id="perimeter">Calcular perímetro</button>
+                    <button type="button"id="area">Calcular área</button>
+                    <p id="result"></p>
+                </form>
                 <form action="">
                     <label for="side">
                         <span>Lado cuadrado</span>
