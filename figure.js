@@ -58,10 +58,13 @@ const circleResult = document.getElementById('circleResult');
 buttonCircleDiameter.addEventListener('click', circleDiameter = () => {
     const calculatingDiamter = parseInt(radio.value)*2;
     circleResult.innerHTML = "El diámetro del círculo es: " + calculatingDiamter;
+    return calculatingDiamter;
 })
 
 buttonCircleCircunference.addEventListener('click', circleCircunference = () => {
-    const calculatingCircunference = parseInt(radio.value)*2*PI;
+    //const calculatingCircunference = parseInt(radio.value)*2*PI;
+    const calculatingDiamter = circleDiameter();
+    const calculatingCircunference = calculatingDiamter*PI;
     circleResult.innerHTML = "La circunferencia del círculo es: " + calculatingCircunference;
 })
 
